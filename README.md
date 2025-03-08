@@ -14,9 +14,8 @@
 ## 📸 Project Screenshots
 
 <div align="center" style="display: flex; justify-content: space-between;">
-  <img src="./assets/images/homepage.png" alt="Home Page" width="32%" style="margin-right: 1%;"/>
-  <img src="./assets/images/product.png" alt="Product Page" width="32%" style="margin-right: 1%;"/>
-  <img src="./assets/images/checkout.png" alt="Checkout Page" width="32%"/>
+  <img src="./assets/images/Home.png" alt="Home Page" width="32%" style="margin-right: 1%;"/>
+  <img src="./assets/images/Shop.png" alt="Shop Page" width="32%"/>
 </div>
 
 ## 🎯 About BestView
