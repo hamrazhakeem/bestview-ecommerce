@@ -58,7 +58,6 @@ BestView is a comprehensive ecommerce platform sells spectacles built with Djang
 ### Prerequisites
 - Python 3.10+
 - PostgreSQL
-- Docker (optional)
 
 ### Installation & Setup
 
@@ -101,13 +100,6 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-### Docker Setup
-
-1. Build and run using Docker Compose:
-```bash
-docker-compose up --build
-```
-
 ## 🔧 Tech Stack
 
 - **Frontend**
@@ -121,10 +113,8 @@ docker-compose up --build
   - PayPal API Integration
 
 - **Infrastructure**
-  - Docker
   - NGINX
   - AWS EC2
-  - GitHub Actions (CI/CD)
 
 ## 👥 Contributing
 
