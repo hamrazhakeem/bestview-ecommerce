@@ -19,17 +19,19 @@ from django.contrib import admin
 from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import HttpResponse
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("allauth.urls")),
+    path("health/", lambda request: HttpResponse(status=200)),
     path("", include("usershome.urls")),
     path("", include("adminshome.urls")),
     path("", include("adminproductmanagement.urls")),
     path("", include("adminusermanagement.urls")),
     path("", include("userprofile.urls")),
     path("", include("userproduct.urls")),
-    path("", include("user_order_and_payment.urls")),
+    path("", include("user_order_and_payment.urls")), 
     path("", include("admin_order_and_payment.urls")),
     path("", include("paypal.standard.ipn.urls")),
 ]
