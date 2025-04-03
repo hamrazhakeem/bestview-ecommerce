@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG") == "False"
 
-ALLOWED_HOSTS = ["127.0.0.1", "0.0.0.0", 'localhost', 'bestview-ecommerce-production-a076.up.railway.app', 'bestview.hamrazhakeem.tech']
+ALLOWED_HOSTS = ["127.0.0.1", "0.0.0.0", 'localhost', 'bestview-ecommerce-production-a076.up.railway.app', 'bestview.hamrazhakeem.tech', '13.127.155.42']
 
 SITE_ID = 7
 
@@ -176,6 +176,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
+
 MEDIA_URL = "/media/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
@@ -210,6 +212,3 @@ EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
 
 # For To Enable Popus in Django or else it will block the payment popup
 SECURE_CROSS_ORIGIN_OPENER_POLICY = "same-origin-allow-popups"
-
-# Simplified static file serving with Whitenoise
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
