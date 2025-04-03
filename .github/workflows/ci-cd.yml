@@ -3,14 +3,6 @@ name: Build and Deploy
 on:
   push:
     branches: [ main ] 
-    paths-ignore:
-    - 'assets/**'
-    - '.gitignore'
-    - 'README.md'
-    - 'docker-compose.yml'
-    - 'docker-compose.prod.yml'
-    - 'Dockerfile'
-    - 'start.sh'
 
 jobs:
   build-and-deploy:
