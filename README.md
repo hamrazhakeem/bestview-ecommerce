@@ -145,6 +145,30 @@ docker-compose exec web python manage.py createsuperuser
   - NGINX
   - AWS EC2
   - Docker & Docker Compose
+  
+- **DevOps**
+  - GitHub Actions for CI/CD
+  - Automated testing and deployment
+  - Docker Hub for container registry
+
+## 🚀 CI/CD Pipeline
+
+BestView implements a robust CI/CD pipeline using GitHub Actions that automates the build, test, and deployment process:
+
+- **Continuous Integration**
+  - Automatic building of Docker images on code push to main branch
+
+- **Continuous Deployment**
+  - Automatic deployment to production environment on AWS EC2
+  - Zero-downtime deployment strategy
+  - Automated database migrations
+
+The CI/CD workflow ensures:
+- Consistent and reliable deployments
+- Reduced manual intervention
+- Faster release cycles
+
+To view the CI/CD configuration, check the `.github/workflows/ci-cd.yml` file in the repository.
 
 ## 👥 Contributing
 

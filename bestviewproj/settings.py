@@ -31,12 +31,11 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG") == "False"
 
-ALLOWED_HOSTS = ["127.0.0.1", "0.0.0.0", 'localhost', 'bestview-ecommerce-production-a076.up.railway.app', 'bestview.hamrazhakeem.tech', '13.127.155.42']
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").split(",")
 
 SITE_ID = 7
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://bestview-ecommerce-production-a076.up.railway.app',
     'https://bestview.hamrazhakeem.tech'
 ]
 
