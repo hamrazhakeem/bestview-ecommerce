@@ -6,7 +6,7 @@ services:
     container_name: bestview-app
     restart: always
     ports:
-      - "80:10000"
+      - "10000:10000"
     depends_on:
       - bestview-db
     env_file:
