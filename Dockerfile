@@ -14,5 +14,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy project
 COPY . .
 
-# Run the application with Django's development server
+# Run the application with gunicorn
 CMD ["gunicorn", "--bind", "0.0.0.0:10000", "bestviewproj.wsgi:application"]
