@@ -8,10 +8,6 @@ build:
       - echo "Build phase"
     post-build:
       - echo "Post-build phase"
-source:
-  type: image
-  image:
-    path: Dockerfile
 run:
   runtime-version: 3.10
   command: ./start.sh
