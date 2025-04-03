@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Run migrations
+python manage.py migrate --noinput
+
+# Create superuser if not exists
+echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.filter(email='admin@bestview.com').exists() or User.objects.create_superuser('admin@bestview.com', 'admin@bestview.com', '1234')" | python manage.py shell
+
+# Start gunicorn
+gunicorn --bind 0.0.0.0:10000 --workers=1 --threads=2 --timeout=120 bestviewproj.wsgi:application 
