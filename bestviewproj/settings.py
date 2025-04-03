@@ -36,8 +36,8 @@ ALLOWED_HOSTS = ["127.0.0.1", "0.0.0.0", 'localhost', 'bestview-ecommerce-produc
 SITE_ID = 7
 
 CSRF_TRUSTED_ORIGINS = [
-    "bestview.hamrazhakeem.tech",
-    "bestview-ecommerce-production-a076.up.railway.app",
+    'https://bestview-ecommerce-production-a076.up.railway.app',
+    'https://bestview.hamrazhakeem.tech'
 ]
 
 # Application definition
