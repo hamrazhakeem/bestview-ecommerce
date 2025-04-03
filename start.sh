@@ -8,6 +8,10 @@ sleep 5
 echo "Running migrations..."
 python manage.py migrate --noinput --verbosity 2
 
+# Collect static files
+echo "Collecting static files..."
+python manage.py collectstatic --noinput
+
 # Create superuser if not exists
 echo "Setting up superuser..."
 echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.filter(email='admin@bestview.com').exists() or User.objects.create_superuser('admin@bestview.com', 'admin@bestview.com', '1234')" | python manage.py shell
