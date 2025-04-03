@@ -114,17 +114,7 @@ cd bestview-ecommerce
 
 2. Start the application using Docker Compose:
 ```bash
-docker-compose up --build
-```
-
-3. Run migrations in the Docker container:
-```bash
-docker-compose exec web python manage.py migrate
-```
-
-4. Create a superuser (optional):
-```bash
-docker-compose exec web python manage.py createsuperuser
+docker-compose up --build -d
 ```
 
 5. Access the application at http://localhost:8000
