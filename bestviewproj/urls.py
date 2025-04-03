@@ -24,7 +24,7 @@ from django.http import HttpResponse
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("allauth.urls")),
-    path("health/", lambda request: HttpResponse(status=200)),
+    path("health", lambda request: HttpResponse(status=200)),
     path("", include("usershome.urls")),
     path("", include("adminshome.urls")),
     path("", include("adminproductmanagement.urls")),
