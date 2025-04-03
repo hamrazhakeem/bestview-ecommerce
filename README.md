@@ -8,6 +8,7 @@
 [![Tech Stack](https://img.shields.io/badge/Backend-Django-green?style=for-the-badge&logo=django)](https://www.djangoproject.com/)
 [![Tech Stack](https://img.shields.io/badge/Database-PostgreSQL-blue?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
 [![Tech Stack](https://img.shields.io/badge/Architecture-Monolithic-orange?style=for-the-badge&logo=django)](https://www.djangoproject.com/)
+[![Tech Stack](https://img.shields.io/badge/Deployment-Docker-blue?style=for-the-badge&logo=docker)](https://www.docker.com/)
 
 </div>
 
@@ -58,8 +59,11 @@ BestView is a comprehensive ecommerce platform sells spectacles built with Djang
 ### Prerequisites
 - Python 3.10+
 - PostgreSQL
+- Docker and Docker Compose (for containerized setup)
 
 ### Installation & Setup
+
+#### Option 1: Traditional Setup
 
 1. Clone the repository:
 
@@ -100,6 +104,31 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+#### Option 2: Docker Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/hamrazhakeem/bestview-ecommerce.git
+cd bestview-ecommerce
+```
+
+2. Start the application using Docker Compose:
+```bash
+docker-compose up --build
+```
+
+3. Run migrations in the Docker container:
+```bash
+docker-compose exec web python manage.py migrate
+```
+
+4. Create a superuser (optional):
+```bash
+docker-compose exec web python manage.py createsuperuser
+```
+
+5. Access the application at http://localhost:8000
+
 ## 🔧 Tech Stack
 
 - **Frontend**
@@ -115,6 +144,7 @@ python manage.py runserver
 - **Infrastructure**
   - NGINX
   - AWS EC2
+  - Docker & Docker Compose
 
 ## 👥 Contributing
 
