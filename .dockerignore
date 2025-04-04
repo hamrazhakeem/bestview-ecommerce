@@ -1,0 +1,23 @@
+# Virtual Environment
+bestviewenv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local development
+.env
+.git
+.gitignore
+
+# Docker files
+Dockerfile
+docker-compose.yml
+
+# Database
+db.sqlite3
+
+# Logs
+*.log
