@@ -24,5 +24,4 @@ db.sqlite3
 
 # Static files
 media/
-static/
 staticfiles/
