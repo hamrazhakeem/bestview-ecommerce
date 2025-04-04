@@ -38,4 +38,4 @@ jobs:
           cd ~/bestviewproj
           docker pull hamrazhakeem/bestview-app:latest
           docker-compose -f docker-compose.prod.yml down
-          docker-compose -f docker-compose.prod.yml up -d  
+          docker-compose -f docker-compose.prod.yml up -d
