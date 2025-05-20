@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)](https://github.com/hamrazhakeem/bestview-ecommerce)
+[![Status](https://img.shields.io/badge/Status-Currently%20Down-critical?style=for-the-badge)](https://github.com/hamrazhakeem/bestview-ecommerce)
 
 [![Tech Stack](https://img.shields.io/badge/Frontend-HTML/CSS/JS-blue?style=for-the-badge&logo=html5)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![Tech Stack](https://img.shields.io/badge/Backend-Django-green?style=for-the-badge&logo=django)](https://www.djangoproject.com/)
@@ -11,6 +11,8 @@
 [![Tech Stack](https://img.shields.io/badge/Deployment-Docker-blue?style=for-the-badge&logo=docker)](https://www.docker.com/)
 
 </div>
+
+> ⚠️ **Service Status**: The platform is currently experiencing downtime. Our team is working to restore services. We apologize for any inconvenience.
 
 ## 📸 Project Screenshots
 
